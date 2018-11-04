@@ -16,6 +16,11 @@
 		9A13D6DE218F92AA0017FEEA /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 9A13D6DD218F92AA0017FEEA /* Assets.xcassets */; };
 		9A13D6E1218F92AA0017FEEA /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9A13D6DF218F92AA0017FEEA /* LaunchScreen.storyboard */; };
 		9A13D6EC218F92AB0017FEEA /* IlegraChallengeTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9A13D6EB218F92AB0017FEEA /* IlegraChallengeTests.swift */; };
+		9A7A5EC8218F94C900EE56D4 /* API.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9A7A5EC7218F94C900EE56D4 /* API.swift */; };
+		9A7A5ECA218F96D200EE56D4 /* Request.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9A7A5EC9218F96D200EE56D4 /* Request.swift */; };
+		9A7A5ECD218F97BD00EE56D4 /* CharacterRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9A7A5ECC218F97BD00EE56D4 /* CharacterRequest.swift */; };
+		9A7A5ED2218FA8FF00EE56D4 /* String+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9A7A5ED1218FA8FF00EE56D4 /* String+Extension.swift */; };
+		9A7A5ED4218FAD0C00EE56D4 /* Character.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9A7A5ED3218FAD0C00EE56D4 /* Character.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -44,6 +49,11 @@
 		9A13D6E7218F92AB0017FEEA /* IlegraChallengeTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = IlegraChallengeTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		9A13D6EB218F92AB0017FEEA /* IlegraChallengeTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IlegraChallengeTests.swift; sourceTree = "<group>"; };
 		9A13D6ED218F92AB0017FEEA /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		9A7A5EC7218F94C900EE56D4 /* API.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = API.swift; sourceTree = "<group>"; };
+		9A7A5EC9218F96D200EE56D4 /* Request.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Request.swift; sourceTree = "<group>"; };
+		9A7A5ECC218F97BD00EE56D4 /* CharacterRequest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CharacterRequest.swift; sourceTree = "<group>"; };
+		9A7A5ED1218FA8FF00EE56D4 /* String+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "String+Extension.swift"; sourceTree = "<group>"; };
+		9A7A5ED3218FAD0C00EE56D4 /* Character.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Character.swift; sourceTree = "<group>"; };
 		9CAE1CEAF724635BFA217E2C /* Pods_IlegraChallenge.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_IlegraChallenge.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		E721ED98EB57BF2217FC2038 /* Pods-IlegraChallenge.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-IlegraChallenge.release.xcconfig"; path = "Pods/Target Support Files/Pods-IlegraChallenge/Pods-IlegraChallenge.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -100,10 +110,12 @@
 		9A13D6D3218F92A80017FEEA /* IlegraChallenge */ = {
 			isa = PBXGroup;
 			children = (
+				9A7A5ECE218FA83400EE56D4 /* Extensions */,
+				9A7A5EC6218F949900EE56D4 /* Views */,
 				9A13D6D4218F92A90017FEEA /* AppDelegate.swift */,
-				9A13D6D6218F92A90017FEEA /* MasterViewController.swift */,
-				9A13D6D8218F92A90017FEEA /* DetailViewController.swift */,
-				9A13D6DA218F92A90017FEEA /* Main.storyboard */,
+				9A7A5EC2218F946300EE56D4 /* ViewControllers */,
+				9A7A5EC3218F946E00EE56D4 /* ViewModels */,
+				9A7A5EC4218F947400EE56D4 /* Models */,
 				9A13D6DD218F92AA0017FEEA /* Assets.xcassets */,
 				9A13D6DF218F92AA0017FEEA /* LaunchScreen.storyboard */,
 				9A13D6E2218F92AA0017FEEA /* Info.plist */,
@@ -118,6 +130,57 @@
 				9A13D6ED218F92AB0017FEEA /* Info.plist */,
 			);
 			path = IlegraChallengeTests;
+			sourceTree = "<group>";
+		};
+		9A7A5EC2218F946300EE56D4 /* ViewControllers */ = {
+			isa = PBXGroup;
+			children = (
+				9A13D6D8218F92A90017FEEA /* DetailViewController.swift */,
+				9A13D6D6218F92A90017FEEA /* MasterViewController.swift */,
+			);
+			path = ViewControllers;
+			sourceTree = "<group>";
+		};
+		9A7A5EC3218F946E00EE56D4 /* ViewModels */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = ViewModels;
+			sourceTree = "<group>";
+		};
+		9A7A5EC4218F947400EE56D4 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				9A7A5ECB218F97A100EE56D4 /* Network */,
+				9A7A5ECC218F97BD00EE56D4 /* CharacterRequest.swift */,
+				9A7A5ED3218FAD0C00EE56D4 /* Character.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		9A7A5EC6218F949900EE56D4 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				9A13D6DA218F92A90017FEEA /* Main.storyboard */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		9A7A5ECB218F97A100EE56D4 /* Network */ = {
+			isa = PBXGroup;
+			children = (
+				9A7A5EC7218F94C900EE56D4 /* API.swift */,
+				9A7A5EC9218F96D200EE56D4 /* Request.swift */,
+			);
+			path = Network;
+			sourceTree = "<group>";
+		};
+		9A7A5ECE218FA83400EE56D4 /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				9A7A5ED1218FA8FF00EE56D4 /* String+Extension.swift */,
+			);
+			path = Extensions;
 			sourceTree = "<group>";
 		};
 		B053406F5B8DFE6131CA0ACC /* Pods */ = {
@@ -299,8 +362,13 @@
 			buildActionMask = 2147483647;
 			files = (
 				9A13D6D9218F92A90017FEEA /* DetailViewController.swift in Sources */,
+				9A7A5ED2218FA8FF00EE56D4 /* String+Extension.swift in Sources */,
 				9A13D6D7218F92A90017FEEA /* MasterViewController.swift in Sources */,
+				9A7A5ECA218F96D200EE56D4 /* Request.swift in Sources */,
+				9A7A5EC8218F94C900EE56D4 /* API.swift in Sources */,
 				9A13D6D5218F92A90017FEEA /* AppDelegate.swift in Sources */,
+				9A7A5ECD218F97BD00EE56D4 /* CharacterRequest.swift in Sources */,
+				9A7A5ED4218FAD0C00EE56D4 /* Character.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
